@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f5;
+    color: #333;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ff4d4d;
+}
+
+.logo img {
+    height: 60px;
+}
+
+header {
+    background-color: #ff1a1a;
+    padding: 10px 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 0 50px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ffd6d6;
+}
+
+main {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    min-height: 500px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+main img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-bar {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+    max-width: 80%;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #ff1a1a;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.search-bar button:hover {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.city-buttons {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: white;
+}
+
+.city-buttons h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    justify-items: center;
+}
+
+.city-grid button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.city-grid button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
